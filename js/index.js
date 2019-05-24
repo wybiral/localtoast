@@ -11,6 +11,7 @@ const ports = [
     [9051,  'Tor SOCKS Proxy'],
     [9150,  'Tor Browser Controller'],
     [9151,  'Tor Browser SOCKS Proxy'],
+    [9200,  'ElasticSearch'],
     [16423, 'Keybase'],
 ];
 
