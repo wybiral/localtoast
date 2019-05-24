@@ -13,6 +13,7 @@ const ports = [
     [9151,  'Tor Browser SOCKS Proxy'],
     [9200,  'ElasticSearch'],
     [16423, 'Keybase'],
+    [27017, 'MongoDB'],
 ];
 
 // Array of [address, description] pairs to be scanned
@@ -24,7 +25,7 @@ window.onload = () => {
     // Shake it up
     shuffle(scanlist);
     // Start workers
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
         setTimeout(worker, 0);
     }
 };
