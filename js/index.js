@@ -2,6 +2,7 @@ const ports = [
     [80,    'HTTP'],
     [631,   'Printing'],
     [3306,  'MySQL'],
+    [3690,  'SVN'],
     [6379,  'Redis'],
     [8000,  'HTTP'],
     [8080,  'HTTP'],
