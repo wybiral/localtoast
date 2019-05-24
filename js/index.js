@@ -21,9 +21,6 @@ const scanlist = [];
 window.onload = () => {
     // Create scanlist
     addHost('127.0.0.1');
-    for (let i = 0; i < 256; i++) {
-        addHost('192.168.1.' + i);
-    }
     // Shake it up
     shuffle(scanlist);
     // Start workers
