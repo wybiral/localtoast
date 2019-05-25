@@ -3,6 +3,7 @@ const ports = [
     [631,   'Printing'],
     [3306,  'MySQL'],
     [3690,  'SVN'],
+    [6006,  'TensorBoard'],
     [6379,  'Redis'],
     [8000,  'HTTP'],
     [8080,  'HTTP'],
@@ -14,6 +15,7 @@ const ports = [
     [9200,  'ElasticSearch'],
     [16423, 'Keybase'],
     [27017, 'MongoDB'],
+    [32400, 'Plex'],
 ];
 
 // Array of [address, description] pairs to be scanned
