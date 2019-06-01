@@ -36,6 +36,10 @@ const services = [
         name: 'HTTP (8080)',
     },
     {
+        url: 'http://127.0.0.1:8112',
+        name: 'Deluge BitTorrent Web UI (8112)',
+    },
+    {
         url: 'http://127.0.0.1:8888',
         name: 'HTTP (8888)',
     },
@@ -46,6 +50,10 @@ const services = [
     {
         url: 'http://127.0.0.1:9051',
         name: 'Tor SOCKS Proxy (9051)',
+    },
+    {
+        url: 'http://127.0.0.1:9091',
+        name: 'Transmission BitTorrent Web Client (9091)',
     },
     {
         url: 'http://127.0.0.1:9150',
