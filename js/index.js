@@ -73,26 +73,20 @@ const services = [
     },
 ];
 
+async function worker() {
+    await Promise.all(
+        services.map(({ url, name }) =>
+            fetch(url, { mode: 'no-cors', cache: 'no-cache' }).then(resp => {
+                const el = document.createElement('div');
+                el.innerText = 'Found: ' + name;
+                document.body.appendChild(el);
+            }).catch(e => e)
+        )
+    );
+    document.querySelector('h1').innerText = 'Results:';
+}
+
 window.onload = () => {
     // Start workers
-    for (let i = 0; i < 10; i++) {
-        setTimeout(worker, 0);
-    }
+    setTimeout(worker, 0);
 };
-
-function worker() {
-    if (services.length == 0) {
-        document.querySelector('h1').innerText = 'Results:';
-        return;
-    }
-    const x = services.shift();
-    fetch(x.url, {mode: 'no-cors', cache: 'no-cache'}).then(resp => {
-        const el = document.createElement('div');
-        el.innerText = 'Found: ' + x.name;
-        document.body.appendChild(el);
-        setTimeout(worker, 0);
-    }).catch(err => {
-        // ¯\_(ツ)_/¯
-        setTimeout(worker, 0);
-    });
-}
