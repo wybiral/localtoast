@@ -85,6 +85,11 @@ const services = [
         url: 'http://127.0.0.1:32400',
         name: 'Plex (32400)',
     },
+    {
+        url: 'http://192.168.1.254/images/att_globe_logo.png',
+        name: 'AT&T U-verse Modem (192.168.1.254)',
+        type: 'img',
+    }
 ];
 
 async function scan() {
