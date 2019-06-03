@@ -1,3 +1,4 @@
+// List of services to scan for.
 const services = [
     {
         url: 'http://127.0.0.1:80',
@@ -10,6 +11,7 @@ const services = [
     {
         url: 'http://127.0.0.1:3000/img/gitea-lg.png',
         name: 'Gitea (3000)',
+        type: 'img',
     },
     {
         url: 'http://127.0.0.1:3306',
@@ -85,20 +87,42 @@ const services = [
     },
 ];
 
-async function worker() {
+async function scan() {
     await Promise.all(
-        services.map(({ url, name }) =>
-            fetch(url, { mode: 'no-cors', cache: 'no-cache' }).then(resp => {
+        services.map(x => {
+            let handler;
+            if (x.type === 'img') {
+                handler = handleImg;
+            } else {
+                handler = handleFetch;
+            }
+            handler(x.url).then(res => {
                 const el = document.createElement('div');
-                el.innerText = 'Found: ' + name;
+                el.innerText = 'Found: ' + x.name;
                 document.body.appendChild(el);
-            }).catch(e => e)
-        )
+            }).catch(e => e);
+        })
     );
     document.querySelector('h1').innerText = 'Results:';
 }
 
-window.onload = () => {
-    // Start workers
-    setTimeout(worker, 0);
-};
+// Handle fetch scans.
+// These are limited to localhost and can only determine if the connection
+// succeeded or not.
+function handleFetch(url) {
+    return fetch(url, {mode: 'no-cors', cache: 'no-cache'});
+}
+
+// Handle img scans.
+// These allow non-localhost connections with mixed-content and are able to
+// verify the presence of specific assets.
+function handleImg(url) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = url;
+    });
+}
+
+window.onload = scan;
