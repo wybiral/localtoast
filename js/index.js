@@ -72,6 +72,10 @@ const services = [
         name: 'Keybase (16423)',
     },
     {
+        url: 'http://127.0.0.1:19999',
+        name: 'Netdata (19999)',
+    },
+    {
         url: 'http://127.0.0.1:27017',
         name: 'MongoDB (27017)',
     },
