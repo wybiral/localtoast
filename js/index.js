@@ -89,9 +89,10 @@ const services = [
         url: 'http://192.168.1.254/images/att_globe_logo.png',
         name: 'AT&T U-verse Modem (192.168.1.254)',
         type: 'img',
-    }
+    },
 ];
 
+// Start scan of all services.
 async function scan() {
     await Promise.all(
         services.map(x => {
