@@ -95,6 +95,11 @@ const services = [
         name: 'Bell Home Hub 3000 (192.168.2.1)',
         type: 'img',
     },
+    {
+        url: 'https://freedombox/plinth/static/theme/img/freedombox-logo-32px.png',
+        name: 'FreedomBox',
+        type: 'img',
+    },
 ];
 
 // Start scan of all services.
