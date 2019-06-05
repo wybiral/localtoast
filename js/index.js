@@ -82,6 +82,10 @@ const services = [
         name: 'MongoDB (27017)',
     },
     {
+        url: 'http://127.0.0.1:27060',
+        name: 'Steam (27060)',
+    },
+    {
         url: 'http://127.0.0.1:32400',
         name: 'Plex (32400)',
     },
