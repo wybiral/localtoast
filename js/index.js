@@ -89,6 +89,11 @@ const services = [
         url: 'http://192.168.1.254/images/att_globe_logo.png',
         name: 'AT&T U-verse Modem (192.168.1.254)',
         type: 'img',
+    },    
+    {
+        url: 'http://192.168.2.1/layout/images/bell/bell_logo.png',
+        name: 'Bell Home Hub 3000 (192.168.2.1)',
+        type: 'img',
     },
 ];
 
