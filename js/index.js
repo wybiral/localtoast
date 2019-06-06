@@ -100,6 +100,13 @@ const services = [
         type: 'img',
     },
     {
+        // The router redirects 'home' to its local ip address if the user is 
+        // using it for dns.
+        url: 'http://home/layout/images/bell/bell_logo.png',
+        name: 'Bell Home Hub 3000 (http://home)',
+        type: 'img',
+    },
+    {
         url: 'https://freedombox/plinth/static/theme/img/freedombox-logo-32px.png',
         name: 'FreedomBox',
         type: 'img',
