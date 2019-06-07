@@ -71,7 +71,7 @@ const services = [
     },
     {
         url: 'http://127.0.0.1:9350',
-        name: 'Brave Browser Tor Mode (9350)',
+        name: 'Brave Browser Tor Proxy (9350)',
     },
     {
         url: 'http://127.0.0.1:16423',
