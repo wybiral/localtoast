@@ -131,7 +131,7 @@ async function scan() {
             } else {
                 handler = handleFetch;
             }
-            handler(x.url).then(res => {
+            return handler(x.url).then(res => {
                 const el = document.createElement('div');
                 el.innerText = 'Found: ' + x.name;
                 document.body.appendChild(el);
