@@ -18,6 +18,10 @@ const services = [
         name: 'MySQL (3306)',
     },
     {
+        url: 'http://127.0.0.1:3689',
+        name: 'Media Player DAAP (3689)',
+    },
+    {
         url: 'http://127.0.0.1:3690',
         name: 'SVN (3690)',
     },
