@@ -70,6 +70,10 @@ const services = [
         name: 'ElasticSearch (9200)',
     },
     {
+        url: 'http://127.0.0.1:9350',
+        name: 'Brave Browser Tor Mode (9350)',
+    },
+    {
         url: 'http://127.0.0.1:16423',
         name: 'Keybase (16423)',
     },
