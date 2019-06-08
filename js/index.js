@@ -82,6 +82,10 @@ const services = [
         name: 'Keybase (16423)',
     },
     {
+        url: 'http://127.0.0.1:17600',
+        name: 'Dropbox (17600)',
+    },
+    {
         url: 'http://127.0.0.1:19999',
         name: 'Netdata (19999)',
     },
