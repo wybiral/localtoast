@@ -51,11 +51,11 @@ const services = [
     },
     {
         url: 'http://127.0.0.1:9050',
-        name: 'Tor Controller (9050)',
+        name: 'Tor SOCKS Proxy (9050)',
     },
     {
         url: 'http://127.0.0.1:9051',
-        name: 'Tor SOCKS Proxy (9051)',
+        name: 'Tor Controller (9051)',
     },
     {
         url: 'http://127.0.0.1:9091',
@@ -63,11 +63,11 @@ const services = [
     },
     {
         url: 'http://127.0.0.1:9150',
-        name: 'Tor Browser Controller (9150)',
+        name: 'Tor Browser SOCKS Proxy (9150)',
     },
     {
         url: 'http://127.0.0.1:9151',
-        name: 'Tor Browser SOCKS Proxy (9151)',
+        name: 'Tor Browser Controller (9151)',
     },
     {
         url: 'http://127.0.0.1:9200/_cat',
