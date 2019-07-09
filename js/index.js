@@ -42,6 +42,11 @@ const services = [
         name: 'HTTP (8080)',
     },
     {
+        url: 'http://127.0.0.1:8080/assets/img/logo-horizontal.svg',
+        name: 'Syncthing (8080)',
+        type: 'img',
+    },
+    {
         url: 'http://127.0.0.1:8112',
         name: 'Deluge BitTorrent Web UI (8112)',
     },
