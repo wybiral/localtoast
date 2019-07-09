@@ -86,6 +86,16 @@ const services = [
         name: 'Dropbox (17600)',
     },
     {
+        url: 'http://127.0.0.1:19421/app_check?action=checkVersion',
+        name: 'Zoom Video Conferencing (CVE-2019–13450, 19421)',
+        type: 'img',
+    },
+    {
+        url: 'http://127.0.0.1:19424/app_check?action=checkVersion',
+        name: 'RingCentral Video Conferencing (CVE-2019–13450, 19424)',
+        type: 'img',
+    },
+    {
         url: 'http://127.0.0.1:19999',
         name: 'Netdata (19999)',
     },
