@@ -139,6 +139,11 @@ const services = [
         type: 'img',
     },
     {
+        url: 'http://fritz.box/css/rd/logos/logo_fritzDiamond.svg',
+        name: 'AVM FRITZ!Box (http://fritz.box)',
+        type: 'img',
+    },
+    {
         url: 'https://freedombox/plinth/static/theme/img/freedombox-logo-32px.png',
         name: 'FreedomBox',
         type: 'img',
