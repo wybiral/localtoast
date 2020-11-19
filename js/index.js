@@ -26,6 +26,10 @@ const services = [
         name: 'SVN (3690)',
     },
     {
+        url: 'http://127.0.0.1:5357',
+        name: 'Microsoft Network Discovery (5357)',
+    },
+    {
         url: 'http://127.0.0.1:6006/data/environment',
         name: 'TensorBoard (6006)',
     },
